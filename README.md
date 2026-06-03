@@ -47,10 +47,6 @@
 常用工具：Git、VS Code、Claude Code、Hexo
 ```
 
-## GitHub 状态
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=yudongyouqing&show_icons=true&theme=default&hide_border=true&locale=cn)
-
 ## 联系我 📫
 
 - QQ：3429938457
