@@ -1,55 +1,59 @@
-# Hi, I'm yudongyouqing
+# 关于我 👋
 
-> Go backend developer, technical writer, and builder exploring AI Agent systems, RAG, knowledge layers, and practical debugging.
+> 充满鲜花的世界到底在哪里，如果它真的存在那么我一定会去。
 
-[![Blog](https://img.shields.io/badge/Blog-yudongyouqing.github.io-0f766e?style=flat-square)](https://yudongyouqing.github.io/)
+[![Blog](https://img.shields.io/badge/Blog-Can%20you%20fell%20my%20world-0f766e?style=flat-square)](https://yudongyouqing.github.io/)
 [![GitHub](https://img.shields.io/badge/GitHub-yudongyouqing-24292f?style=flat-square&logo=github)](https://github.com/yudongyouqing)
-[![Go](https://img.shields.io/badge/Focus-Go%20Backend-00ADD8?style=flat-square&logo=go&logoColor=white)](https://go.dev/)
+[![Go](https://img.shields.io/badge/Golang-Backend-00ADD8?style=flat-square&logo=go&logoColor=white)](https://go.dev/)
 
-I like turning scattered notes, code-reading sessions, and real debugging experience into reusable technical writing. Most of my recent work focuses on backend engineering, Go internals, AI Agent workflows, and how retrieval systems behave in real codebases.
+你好，我是 **clearlove13**。
 
-## What I Care About
+咸鱼、宅男、Golang 后端开发，技术爱好者。喜欢探究底层实现，也支持开源和技术分享。这里主要记录我的学习、项目、调试经验和一些脑洞。
 
-- Backend engineering with Go, especially reliability, concurrency, and system behavior.
-- AI Agent infrastructure, including tool use, memory, retrieval, and knowledge organization.
-- RAG and search systems, with a practical bias toward grep, code structure, and maintainable knowledge layers.
-- Developer tooling, debugging workflows, and notes that help others avoid repeated pitfalls.
+## 标签 🏷️
 
-## Writing And Notes
+- 🐟 咸鱼，但偶尔会折腾点东西
+- 🏠 宅男，喜欢安静地写代码和看文档
+- ⌨️ Golang 后端开发
+- 🔍 喜欢探究底层实现和系统原理
+- 👐 开源坚定支持者
 
-I keep longer technical notes on my blog:
+## 技术相关 🔧
 
-[yudongyouqing.github.io](https://yudongyouqing.github.io/)
+- ACMer 选手，热爱算法与竞赛。
+- 喜欢分享开源小工具和项目。
+- 对底层实现、系统原理、后端工程有浓厚兴趣。
+- 最近也在关注 AI Agent、RAG、知识管理和开发者工具。
 
-Recent topics include:
+## 最近在写 ✍️
 
-- LLM Wiki and Agent knowledge layers
-- Why grep can be a better fit than traditional RAG for codebases
-- Go `panic`, `defer`, `recover`, and `context`
-- LeetCode and local C/C++ debugging workflows
+我的技术笔记主要放在博客：
 
-## Tech Stack
+👉 [Can you fell my world](https://yudongyouqing.github.io/)
+
+近期内容包括：
+
+- LLM Wiki 与 Agent 知识层
+- Claude Code 的检索方式，以及为什么 grep 可能比 RAG 更适合代码库
+- Go 里的 `panic` / `defer` / `recover`
+- Go 标准库中的 `context`
+- LeetCode 本地调试和工具配置
+
+## 技术栈
 
 ```text
-Languages:   Go, C++, JavaScript
-Backend:     Go services, APIs, concurrency, reliability
-AI Systems:  Agent workflows, RAG, retrieval, knowledge management
-Tools:       Git, VS Code, Claude Code, Hexo
+主力语言：Go / C++
+关注方向：后端开发、系统原理、算法竞赛、AI Agent、RAG
+常用工具：Git、VS Code、Claude Code、Hexo
 ```
 
-## Current Focus
+## GitHub 状态
 
-- Building a deeper understanding of Agent systems from source code and real workflows.
-- Writing clearer technical notes about Go, backend engineering, and retrieval.
-- Turning debugging experience into repeatable playbooks.
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=yudongyouqing&show_icons=true&theme=default&hide_border=true&locale=cn)
 
-## GitHub Stats
+## 联系我 📫
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=yudongyouqing&show_icons=true&theme=default&hide_border=true)
+- QQ：3429938457
+- Blog：[yudongyouqing.github.io](https://yudongyouqing.github.io/)
 
-## Contact
-
-- GitHub: [@yudongyouqing](https://github.com/yudongyouqing)
-- Blog: [Can you fell my world](https://yudongyouqing.github.io/)
-
-Thanks for visiting.
+欢迎技术交流 / 闲聊 / 开黑~
