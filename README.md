@@ -18,13 +18,6 @@ Golang 后端开发，技术爱好者。喜欢探究底层实现，也乐于分�
 - ACMer 选手，热爱算法与竞赛。
 - 喜欢分享开源小工具和项目。
 - 对底层实现、系统原理、后端工程有浓厚兴趣。
-- lol海斗大王
-
-
-## 联系我 📫
-
-- QQ：3429938457
-- Blog：[yudongyouqing.github.io](https://yudongyouqing.github.io/)
 
 
 ## 活跃度 📈
