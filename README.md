@@ -8,9 +8,9 @@
 
 你好，我是 **clearlove13**。
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=0F766E&vCenter=true&width=420&lines=%E5%92%B8%E9%B1%BC%3BGo+%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%3BACMer%3Blol%E6%B5%B7%E6%96%97%E5%A4%A7%E7%8E%8B)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=0F766E&vCenter=true&width=420&lines=Go+%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%3B%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86%E7%88%B1%E5%A5%BD%E8%80%85%3BACMer%3Blol%E6%B5%B7%E6%96%97%E5%A4%A7%E7%8E%8B)](https://git.io/typing-svg)
 
-咸鱼、宅男、Golang 后端开发，技术爱好者。喜欢探究底层实现，也支持开源和技术分享。
+Golang 后端开发，技术爱好者。喜欢探究底层实现，也乐于分享开源小工具。
 
 
 ## 相关 🔧
