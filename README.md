@@ -8,6 +8,8 @@
 
 你好，我是 **clearlove13**。
 
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=0F766E&vCenter=true&width=420&lines=%E5%92%B8%E9%B1%BC%3BGo+%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%3BACMer%3Blol%E6%B5%B7%E6%96%97%E5%A4%A7%E7%8E%8B)](https://git.io/typing-svg)
+
 咸鱼、宅男、Golang 后端开发，技术爱好者。喜欢探究底层实现，也支持开源和技术分享。
 
 
@@ -23,5 +25,10 @@
 
 - QQ：3429938457
 - Blog：[yudongyouqing.github.io](https://yudongyouqing.github.io/)
+
+
+## 活跃度 📈
+
+![](./profile-3d-contrib/profile-season-animate.svg)
 
 
