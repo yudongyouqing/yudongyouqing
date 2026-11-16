@@ -20,7 +20,6 @@
 | MyGo [#1910](https://github.com/egoist/mygo/pull/1910) | 修复单实例锁的生命周期与并发启动问题；持续等待锁释放、兼容旧版实例的改进由上游整合至 #1909，以 Co-author 身份合入 main（#1910 因方案重叠关闭）。 |
 | Raven [#1264](https://github.com/EverMind-AI/Raven/pull/1264) | Agent Plugin 账本从按包名登记改为按 workspace 隔离（v2 记录），覆盖或删除前校验宿主创建的标记；v1 记录保留为未验证来源，损坏账本拒载，失败的删除可重试。 |
 | Raven [#955](https://github.com/EverMind-AI/Raven/pull/955) / [#1002](https://github.com/EverMind-AI/Raven/pull/1002) / [#1056](https://github.com/EverMind-AI/Raven/pull/1056) | 子代理 DAG：DAG 节点改经 `sandbox_factory` 逐节点构建执行器，`tools.sandbox` 配置不再被静默绕过；replan 命中的那一轮为 skipped/cancelled 节点补发终态帧；TUI 对从未运行的节点不再显示 0s 时长。 |
-| Raven [#825](https://github.com/EverMind-AI/Raven/pull/825) / [#859](https://github.com/EverMind-AI/Raven/pull/859) | MCP 客户端分页：`tools/list` 跟随 `nextCursor` 累积注册，重复游标即停；随后把 `resources/list`、`resources/templates/list`、`prompts/list` 收敛到同一游标引擎，对外只暴露带类型的 walker。 |
 | [teamai-cli #996](https://github.com/Tencent/teamai-cli/pull/996) | 代码图谱补上 Scala：采集器白名单 `.scala` 并标记 `Main.scala`/`App.scala` 为关键文件，新增 Scala 抽取器，Java/Scala 混合项目不再产出只含 Java 的图。 |
 | [3x-ui #6830](https://github.com/MHSanaei/3x-ui/pull/6830) | `XUI_ENABLE_FAIL2BAN=false` 不再导致客户端 IP 停止记录：env 变量只门控封禁执行，扫描与在线统计照常入库，Windows 路径同样停用。 |
 
