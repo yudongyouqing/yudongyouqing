@@ -10,12 +10,8 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=0F766E&vCenter=true&width=420&lines=Go+%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91%3B%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86%E7%88%B1%E5%A5%BD%E8%80%85%3BACMer%3Blol%E6%B5%B7%E6%96%97%E5%A4%A7%E7%8E%8B)](https://git.io/typing-svg)
 
-Golang 后端开发，技术爱好者。喜欢探究底层实现，也乐于分享开源小工具。
-
 
 ## 开源贡献 🧩
-
-主要在 [EverMind-AI/Raven](https://github.com/EverMind-AI/Raven)（开源多智能体生态系统）：已合并 11 个 PR，集中在子代理 DAG 执行、MCP 客户端正确性、沙箱与升级链路；另有 3x-ui、teamai-cli、AgentRecall 各一个。
 
 ### 已合并
 
@@ -27,8 +23,6 @@ Golang 后端开发，技术爱好者。喜欢探究底层实现，也乐于分�
 | [teamai-cli #996](https://github.com/Tencent/teamai-cli/pull/996) | 代码图谱补上 Scala：采集器白名单 `.scala` 并标记 `Main.scala`/`App.scala` 为关键文件，新增 Scala 抽取器，Java/Scala 混合项目不再产出只含 Java 的图。 |
 | [3x-ui #6830](https://github.com/MHSanaei/3x-ui/pull/6830) | `XUI_ENABLE_FAIL2BAN=false` 不再导致客户端 IP 停止记录：env 变量只门控封禁执行，扫描与在线统计照常入库，Windows 路径同样停用。 |
 
-全部已合并 PR：[is:pr author:yudongyouqing](https://github.com/pulls?q=is%3Apr+author%3Ayudongyouqing+is%3Amerged+-user%3Ayudongyouqing)
-
 ### 待合并
 
 | 项目 | 工作 |
@@ -38,8 +32,6 @@ Golang 后端开发，技术爱好者。喜欢探究底层实现，也乐于分�
 
 
 ## 最近文章 ✍️
-
-[博客](https://yudongyouqing.github.io/) · 以下列表由 GitHub Actions 自动更新
 
 <!-- BLOG-POST-LIST:START -->
 - [Claude 的记忆系统：显著性、做梦，和 MEMORY.md 的前 200 行](https://yudongyouqing.github.io/2026/11/16/claude-memory-takeaways/)
