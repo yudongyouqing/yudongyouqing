@@ -1,0 +1,20 @@
+name: Update README with latest blog posts
+
+on:
+  schedule:
+    - cron: "0 1 * * *" # 每天 UTC 1:00(北京时间 9:00)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  blog:
+    name: Pull latest posts from RSS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://yudongyouqing.github.io/atom.xml"
+          max_post_count: 5
