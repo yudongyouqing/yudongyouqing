@@ -17,18 +17,24 @@ Golang 后端开发，技术爱好者。喜欢探究底层实现，也乐于分�
 
 主要在 [EverMind-AI/Raven](https://github.com/EverMind-AI/Raven)（开源多智能体生态系统）：已合并 11 个 PR，集中在子代理 DAG 执行、MCP 客户端正确性、沙箱与升级链路；另有 3x-ui、teamai-cli、AgentRecall 各一个。
 
+### 已合并
+
 | 项目 | 工作 |
 | --- | --- |
 | Raven [#1264](https://github.com/EverMind-AI/Raven/pull/1264) | Agent Plugin 账本从按包名登记改为按 workspace 隔离（v2 记录），覆盖或删除前校验宿主创建的标记；v1 记录保留为未验证来源，损坏账本拒载，失败的删除可重试。 |
 | Raven [#955](https://github.com/EverMind-AI/Raven/pull/955) / [#1002](https://github.com/EverMind-AI/Raven/pull/1002) / [#1056](https://github.com/EverMind-AI/Raven/pull/1056) | 子代理 DAG：DAG 节点改经 `sandbox_factory` 逐节点构建执行器，`tools.sandbox` 配置不再被静默绕过；replan 命中的那一轮为 skipped/cancelled 节点补发终态帧；TUI 对从未运行的节点不再显示 0s 时长。 |
 | Raven [#825](https://github.com/EverMind-AI/Raven/pull/825) / [#859](https://github.com/EverMind-AI/Raven/pull/859) | MCP 客户端分页：`tools/list` 跟随 `nextCursor` 累积注册，重复游标即停；随后把 `resources/list`、`resources/templates/list`、`prompts/list` 收敛到同一游标引擎，对外只暴露带类型的 walker。 |
-| Raven [#822](https://github.com/EverMind-AI/Raven/pull/822) / [#891](https://github.com/EverMind-AI/Raven/pull/891) / [#1003](https://github.com/EverMind-AI/Raven/pull/1003) | 沙箱与升级：boxlite 安装提示指向实际运行的解释器而非全局 pip；`raven upgrade` 重建工具环境时保留已安装的 boxlite；源码 checkout 安装不再被提供页内升级，每条拒绝路径给出各自的恢复命令。 |
-| Raven [#1058](https://github.com/EverMind-AI/Raven/pull/1058) | playbook 路由条件的参数与 prompt 在同一站点填充（密钥保留屏蔽），未声明的 `${params.*}` 引用改为校验失败，判定器不再收到带占位符的条件。 |
-| [3x-ui #6830](https://github.com/MHSanaei/3x-ui/pull/6830) | `XUI_ENABLE_FAIL2BAN=false` 不再导致客户端 IP 停止记录：env 变量只门控封禁执行，扫描与在线统计照常入库，Windows 路径同样停用。 |
 | [teamai-cli #996](https://github.com/Tencent/teamai-cli/pull/996) | 代码图谱补上 Scala：采集器白名单 `.scala` 并标记 `Main.scala`/`App.scala` 为关键文件，新增 Scala 抽取器，Java/Scala 混合项目不再产出只含 Java 的图。 |
-| [AgentRecall #624](https://github.com/zszz3/AgentRecall/pull/624) | 会话趋势图日期可点击、新增自定义日期范围筛选（自然周期预设 + 精确区间，DST 安全），复用既有 `customDateRange` 通道。 |
+| [3x-ui #6830](https://github.com/MHSanaei/3x-ui/pull/6830) | `XUI_ENABLE_FAIL2BAN=false` 不再导致客户端 IP 停止记录：env 变量只门控封禁执行，扫描与在线统计照常入库，Windows 路径同样停用。 |
 
 全部已合并 PR：[is:pr author:yudongyouqing](https://github.com/pulls?q=is%3Apr+author%3Ayudongyouqing+is%3Amerged+-user%3Ayudongyouqing)
+
+### 待合并
+
+| 项目 | 工作 |
+| --- | --- |
+| Raven [#1321](https://github.com/EverMind-AI/Raven/pull/1321) | 生成的参与者收到的 tool call 被序列化成 dataclass 字符串，读不到调用名与嵌套参数；改为投影成纯 `id`/`name`/`arguments` 映射，与宿主响应递归解耦，保留原回退行为。 |
+| [FreeSWITCH #3203](https://github.com/signalwire/freeswitch/pull/3203) | v1.11.2 引入的 inject-DoS 防护误吞了 `switch_rtp_break()` 唤醒读线程的 break ping，无 timer 的 RTP 会话挂断延迟从 ~20ms 涨到 ~5s；修正判据让该 ping 直通。 |
 
 
 ## 最近文章 ✍️
