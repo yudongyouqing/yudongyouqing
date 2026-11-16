@@ -36,6 +36,11 @@ Golang 后端开发，技术爱好者。喜欢探究底层实现，也乐于分�
 [博客](https://yudongyouqing.github.io/) · 以下列表由 GitHub Actions 自动更新
 
 <!-- BLOG-POST-LIST:START -->
+- [Claude 的记忆系统：显著性、做梦，和 MEMORY.md 的前 200 行](https://yudongyouqing.github.io/2026/11/16/claude-memory-takeaways/)
+- [GoFrame 数组参数静默绑定失败：比不支持更坑的半吊子支持](https://yudongyouqing.github.io/2026/10/20/goframe-indexed-array-binding/)
+- [Go 语言中的 defer：常见用法与避坑指南](https://yudongyouqing.github.io/2026/10/20/go-defer/)
+- [一个流水水水水账](https://yudongyouqing.github.io/2026/06/16/yi-ge-liu-shui-shui-shui-zhang/)
+- [中文分词-最大匹配算法](https://yudongyouqing.github.io/2026/06/04/%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D-%E6%9C%80%E5%A4%A7%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95/)
 <!-- BLOG-POST-LIST:END -->
 
 
