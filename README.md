@@ -19,7 +19,7 @@
 | --- | --- |
 | MyGo [#1910](https://github.com/egoist/mygo/pull/1910) | 修复单实例锁的生命周期与并发启动问题；持续等待锁释放、兼容旧版实例的改进由上游整合至 #1909，以 Co-author 身份合入 main（#1910 因方案重叠关闭）。 |
 | Raven [#1264](https://github.com/EverMind-AI/Raven/pull/1264) | Agent Plugin 账本从按包名登记改为按 workspace 隔离（v2 记录），覆盖或删除前校验宿主创建的标记；v1 记录保留为未验证来源，损坏账本拒载，失败的删除可重试。 |
-| Raven [#955](https://github.com/EverMind-AI/Raven/pull/955) / [#1002](https://github.com/EverMind-AI/Raven/pull/1002) / [#1056](https://github.com/EverMind-AI/Raven/pull/1056) | 子代理 DAG：DAG 节点改经 `sandbox_factory` 逐节点构建执行器，`tools.sandbox` 配置不再被静默绕过；replan 命中的那一轮为 skipped/cancelled 节点补发终态帧；TUI 对从未运行的节点不再显示 0s 时长。 |
+| Raven [#1309](https://github.com/EverMind-AI/Raven/pull/1309) / [#1321](https://github.com/EverMind-AI/Raven/pull/1321) | 头部摘要压缩不再吞掉只存在于旧消息里的插件 MCP notice：摘要成功后在当前问题重述最新生效的 notice，逐字尾部保证从本轮 runtime-context 问题信封之前起算；生成的参与者收到的 tool call 改投影成纯 `id`/`name`/`arguments` 映射，不再被序列化成 dataclass 字符串。 |
 | [teamai-cli #996](https://github.com/Tencent/teamai-cli/pull/996) | 代码图谱补上 Scala：采集器白名单 `.scala` 并标记 `Main.scala`/`App.scala` 为关键文件，新增 Scala 抽取器，Java/Scala 混合项目不再产出只含 Java 的图。 |
 | [3x-ui #6830](https://github.com/MHSanaei/3x-ui/pull/6830) | `XUI_ENABLE_FAIL2BAN=false` 不再导致客户端 IP 停止记录：env 变量只门控封禁执行，扫描与在线统计照常入库，Windows 路径同样停用。 |
 
@@ -27,8 +27,9 @@
 
 | 项目 | 工作 |
 | --- | --- |
-| Raven [#1321](https://github.com/EverMind-AI/Raven/pull/1321) | 生成的参与者收到的 tool call 被序列化成 dataclass 字符串，读不到调用名与嵌套参数；改为投影成纯 `id`/`name`/`arguments` 映射，与宿主响应递归解耦，保留原回退行为。 |
+| [MyGo #1970](https://github.com/egoist/mygo/pull/1970) | `.view` 标记文件编译成普通 `View(c *ui.Context)` Go 方法（#1457 第一阶段）：UI 树进标记、状态与逻辑留在 Go；从应用 `ui` export data 读取构造器与事件查询，`go/types` 解析名字，写盘前逐个类型检查候选输出，`mygo generate` 与 CLI 编译前自动运行。 |
 | [FreeSWITCH #3203](https://github.com/signalwire/freeswitch/pull/3203) | v1.11.2 引入的 inject-DoS 防护误吞了 `switch_rtp_break()` 唤醒读线程的 break ping，无 timer 的 RTP 会话挂断延迟从 ~20ms 涨到 ~5s；修正判据让该 ping 直通。 |
+| [FreeSWITCH #3201](https://github.com/signalwire/freeswitch/pull/3201) | partner uuid 读取带 `dup=TRUE`，bridged 通话每个 CNG 帧都把 `signal_bond` 重复分配进 session pool，静默腿（MOH/DTX）按帧率泄漏内存（约 12MB/小时/腿，可致 OOM）；改 `dup=FALSE` 直读，锁内稳定拷贝契约不变。 |
 
 
 ## 最近文章 ✍️
