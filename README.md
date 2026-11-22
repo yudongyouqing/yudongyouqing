@@ -29,6 +29,8 @@
 | --- | --- |
 | [MyGo #1970](https://github.com/egoist/mygo/pull/1970) | `.view` 标记文件编译成普通 `View(c *ui.Context)` Go 方法（#1457 第一阶段）：UI 树进标记、状态与逻辑留在 Go；从应用 `ui` export data 读取构造器与事件查询，`go/types` 解析名字，写盘前逐个类型检查候选输出，`mygo generate` 与 CLI 编译前自动运行。 |
 | [FreeSWITCH #3203](https://github.com/signalwire/freeswitch/pull/3203) | v1.11.2 引入的 inject-DoS 防护误吞了 `switch_rtp_break()` 唤醒读线程的 break ping，无 timer 的 RTP 会话挂断延迟从 ~20ms 涨到 ~5s；修正判据让该 ping 直通。 |
+| [nats.go #2255](https://github.com/nats-io/nats.go/pull/2255) | `Conn.Flush()`/`RTT()` 和 `Drain()` 收尾 flush 的等待原本是写死的 10s / 5s 魔数（#580）；新增 `FlushWait` 与 `DrainFlushTimeout` 选项，默认值不变、拨号时拒绝负值，订阅 drain 的确认固定用默认等待而不跟随偏短的 `FlushWait`，避免队列里的消息被提前丢弃，并补上超时选择与订阅 drain 的回归测试。 |
+| [River #1604](https://github.com/riverqueue/river/pull/1604) | 给 `JobCompleteTx` 事务完成示例补一个可运行的 worker 测试：worker 的数据库字段改成只含 `Begin(ctx) (pgx.Tx, error)` 的接口，生产示例从连接池开事务，测试用 `rivertest.Worker` 把外层测试事务注入同一个 worker、经保存点访问未提交的任务；在 worker 返回前断言任务已变为 `completed`，避免自动完成掩盖 `JobCompleteTx` 未生效。 |
 
 
 ## 最近文章 ✍️
